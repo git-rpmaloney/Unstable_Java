@@ -26,8 +26,8 @@ class house{
         stulo = 8994 / 12; 
         rent = 800;
         counciltax = 139;
-        electric = 35;
-        gas = 33;
+        electric = 49;
+        gas = 49;
         water = 21;
         tvlicense = 39/3;
         renterinsurance = 13;
