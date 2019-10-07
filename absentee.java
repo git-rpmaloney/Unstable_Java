@@ -1,0 +1,2 @@
+class absentee extends Exception{
+}
