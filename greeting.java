@@ -1,6 +1,5 @@
 class greeting{
-    public void greeting(){
-        person p = new friend();
+    public void greeting(person p){
         p.speak();
     }
 }
