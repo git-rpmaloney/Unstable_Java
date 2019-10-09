@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.TextField;
 import java.awt.event.*;
 class singleEventHandler implements ActionListener{
-    TextField txt1, txt2, txt3;
+    TextField scr;
     Label error;
     public singleEventHandler(TextField T1, TextField T2, TextField T3, Label Err){
         txt1 = T1;
@@ -36,8 +36,16 @@ class singleEventHandler implements ActionListener{
                 txt3.setText(Integer.toString(C));
         }
             catch(NumberFormatException Err){
+            txt3.setText("INVALID CHARACTER");
             error.setText("Invalid Character Entered!");
             System.out.println("Exception Thrown: [Invalid Digits Entered into Inputs]");
+                Frame F2 = new Frame();
+                Label errorlabel = new Label("YOU HAVE FAILED TO ENTER A VALUE WHICH MEETS THE CONSTRAINTS");
+                F2.add(errorlabel);
+                FlowLayout Flow2 = new FlowLayout();
+                F2.setLayout(Flow2);
+
+
             }   
     }
 }
