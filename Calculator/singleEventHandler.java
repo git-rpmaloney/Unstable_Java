@@ -21,21 +21,18 @@ class singleEventHandler implements ActionListener{
         B = Integer.parseInt(txt2.getText());
         
                 if(Sign.equals("+")){
-                    error.setText("");
                     C = A + B;
                 }
                 if(Sign.equals("-")){
-                    error.setText("");
                     C = A - B;
                 }
                 if(Sign.equals("x")){
-                    error.setText("");
                     C = A*B;
                 }
                 if(Sign.equals("/")){
-                    error.setText("");
                     C = A / B;
                 }
+                error.setText(null);
                 txt3.setText(Integer.toString(C));
         }
             catch(NumberFormatException Err){
