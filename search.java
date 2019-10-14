@@ -3,9 +3,11 @@ class search{
         int findcount=0;
         String word = "";
         String Alpha;
+        String find = "bert";
+        String message = "";
         int i = 0;
         for(;i<msg.length();i++){
-            Alpha = msg.substring(i,i+1);
+            Alpha = message.substring(i,i+1);
             if(Alpha.equals(" ")){
                 System.out.println(word);
                 if(word.equals(find)){
