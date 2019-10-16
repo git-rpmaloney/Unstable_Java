@@ -18,7 +18,7 @@ class Form{
         Window.add(No2);
         Window.add(new Label("Result"));
         Window.add(Result);
-        Window.add(Button1.NORTH);
+        Window.add(Button1,NORTH);
         Window.setSize(400,400);
 
         Button1.addActionListener(

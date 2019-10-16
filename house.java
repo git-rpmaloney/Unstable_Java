@@ -26,16 +26,16 @@ class house{
         stulo = 8994 / 12; 
         rent = 800;
         counciltax = 139;
-        electric = 49;
-        gas = 49;
+        electric = 71;
+        gas = 71;
         water = 21;
         tvlicense = 39/3;
         renterinsurance = 13;
         netflix = 12;
-        broadband = 33;
+        broadband = 65;
         mobilephones = 30;
         monthlycost = rent + counciltax + electric + gas + water + tvlicense + renterinsurance + netflix + broadband +  mobilephones;
-        salary = 1600;
+        salary = 1800;
         cbcont =(monthlycost * 0.25f);
         cbrem = stulo - (cbcont + carinsu + rota);
         net = (salary-monthlycost);
@@ -46,7 +46,8 @@ class house{
         System.out.println("AFTER COURTNEY CONTRIBUTION (NET): " + totalrem);
         System.out.println(cbrem);
         System.out.println((cbrem+totalrem)/2);   
-        System.out.println((cbrem+totalrem+job)/2);     
+        System.out.println((cbrem+totalrem+job)/2);  
+        System.out.println(monthlycost);
 
 
     }
